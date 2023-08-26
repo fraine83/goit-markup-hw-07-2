@@ -674,6 +674,196 @@ img {
 .footer.button:focus {
     background-color: var(--oceancolor);
 }
+/*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*/
+@media screen and (min-width: 768px) {
+.container {
+    width: 768px;
+    min-width: 768px;
+    padding: 0 15px;
+        }
+.section {
+    padding: 120px 0;
+}
+
+.section.no-top-padding {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+.page-header {
+    display: flex;
+    flex-shrink: 1;
+    border-bottom: .1px solid var(--cornflower);
+    height: auto;
+}
+.nav-menu .page,
+.contacts-menu .contact {
+    color: var(--navyblue);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    transition: color 250ms ease-in-out;
+}
+
+.nav-menu {
+    margin-left: 73px;
+}
+
+.nav-menu .item:not(:last-child),
+.contacts-menu .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contacts-menu {
+    gap: 10px;
+    margin-left: auto;
+}
+
+.nav-menu .page {
+    position: relative;
+}
+
+.page {
+    position: relative;
+}
+
+.nav-menu .page::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 4px;
+    bottom: -1px;
+    width: 0;
+    border-radius: 2px;
+    transition: width 250ms ease-in-out, background-color 250ms ease-in-out,
+        border 250ms ease-in-out;
+}
+
+.nav-menu .page.current::after {
+    width: 100%;
+    background-color: var(--oceancolor);
+    border: 2px solid var(--oceancolor);
+}
+
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .contact:hover,
+.contacts-menu .contact .link:focus {
+    color: var(--iriscolor);
+}
+
+.nav-menu .page:hover:after,
+.nav-menu .page:focus::after {
+    border: 2px solid var(--oceancolor);
+    background-color: var(--oceancolor);
+    width: 100%;
+}
+
+.contacts-menu .contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+.menu,
+.navigation,
+.nav-menu,
+.contacts-menu {
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    background-image: url(../images/Dark-bg.png), url(../images/people-office-1-t.jpg),
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    background-size: cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/Dark-bg.png), url(../images/people-office-1-t@2x.jpg);
+    }
+}
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefits .item {
+    display: column;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+.benefits .item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+ .benefits .title {
+     display: flex;
+     align-items: flex-start;
+     font-size: 36px;
+     font-weight: 700;
+     color: var(--navyblue);
+     line-height: 40px;
+     letter-spacing: 0.05em;
+     margin-bottom: 10px;
+     text-transform: capitalize;
+ }
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.team .item {
+    flex-basis: calc(100% / 2 - 30px);
+    background-color: var(--whitecolor);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.12);
+}
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+}
+.partners .item {
+    height: 90px;
+    flex-basis: calc((100% / 3 - 50px));
+  
+  
+}
+.team .name {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--navyblue);
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.team .position {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--slatecolor);
+    padding-bottom: 10px;
+}
+}
+
+
+
+
+
+
 
 /**//**//**//**//**//**//**//**//**//**//*1158px*//*1158px*//*1158px*//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 
@@ -1477,8 +1667,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 80;
 
-    margin-left: auto;
+    margin-left:  auto;
     padding: 0;
     background-color: transparent; 
     cursor: pointer;
