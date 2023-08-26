@@ -59,7 +59,6 @@ img {
 /*END OF CSS RESET*/
 .container {
     width: 428px;
-    min-width: 428px;
     padding: 0 16px;
 }
 .section {
