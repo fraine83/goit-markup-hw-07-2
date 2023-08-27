@@ -74,7 +74,11 @@ img {
     display: none;
 }
 .page-header {
-    height: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 70px;
     border-bottom: .1px solid var(--cornflower);
 }
 .navigation {
@@ -550,18 +554,28 @@ img {
     color: var(--iriscolor);
     border-color: var(--iriscolor);
 }
+.page-footer {
+    height: 600px;
+    padding: 40px 15px;
+    align-items: center;
+    justify-content: center;
+}
 .footer {
     text-align: center;
-    padding-top: 40px;
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
     height: 0 auto;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+      
 }
    
 .footer-block {
-    display: block;
-    text-align: center;
+   /* display: flex;
+    text-align: center;*/
+    margin-top: 30px;
 }
 .footer-address {
     display: inline-block;
@@ -655,6 +669,7 @@ img {
 
 
 .footer-subs {
+    margin-top: 80px;
     display: block;
     justify-content: center;
     text-align: center;
@@ -674,14 +689,15 @@ img {
     background-color: var(--oceancolor);
 }
 /*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*//*768px*/
+
 @media screen and (min-width: 768px) {
 .container {
     width: 768px;
-    min-width: 768px;
-    padding: 0 15px;
-        }
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .section {
-    padding: 120px 0;
+    padding: 120px 15px;
 }
 
 .section.no-top-padding {
@@ -692,7 +708,7 @@ img {
 }
 .page-header {
     display: flex;
-    flex-shrink: 1;
+    align-content: center;
     border-bottom: .1px solid var(--cornflower);
     height: auto;
 }
@@ -711,19 +727,35 @@ img {
 }
 
 .nav-menu {
+    display: flex;
     margin-left: 73px;
+    align-content: center;
+    
 }
 
-.nav-menu .item:not(:last-child),
-.contacts-menu .item:not(:last-child) {
+.nav-menu .item:not(:last-child)
+ {
     margin-right: 30px;
 }
 
 .contacts-menu {
     gap: 10px;
     margin-left: auto;
-}
+    
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}   
 
+.contacts-menu .contact {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.48px;
+    
+}
 .nav-menu .page {
     position: relative;
 }
@@ -731,7 +763,6 @@ img {
 .page {
     position: relative;
 }
-
 .nav-menu .page::after {
     content: "";
     position: absolute;
@@ -765,20 +796,18 @@ img {
     width: 100%;
 }
 
-.contacts-menu .contact {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 0.48px;
-}
-
 .menu,
 .navigation,
 .nav-menu,
-.contacts-menu {
+.contacts-menu{
     display: flex;
     align-items: center;
 }
+.menu {
+    align-content: center;
+   justify-content: center;
+}
+
 
 .hero {
     background-image: url(../images/Dark-bg.png), url(../images/people-office-1-t.jpg),
@@ -839,8 +868,6 @@ img {
 .partners .item {
     height: 90px;
     flex-basis: calc((100% / 3 - 50px));
-  
-  
 }
 .team .name {
     font-weight: 500;
@@ -856,12 +883,8 @@ img {
     color: var(--slatecolor);
     padding-bottom: 10px;
 }
+
 }
-
-
-
-
-
 
 
 
@@ -881,6 +904,7 @@ img {
 }
 
 .page-header {
+    height: 80px;
     flex-shrink: 1;
     border-bottom: .1px solid var(--cornflower);
 }
@@ -927,6 +951,8 @@ img {
 }
 .contacts-menu {
     margin-left: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-menu .page {
@@ -1287,14 +1313,22 @@ img {
 .social-team .link:focus {
     background-color: var(--oceancolor);
 }
+.page-footer {
+    height: 312px;
+    display: flex;
+}
 
 .footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
     
 }
 .footer-block {
-    display: inline-block;
+   margin-top: -60px;
+   display: block;
     margin-left: 120px;
 }
 .logo-link {
@@ -1344,6 +1378,7 @@ img {
 }
 
 .page-footer {
+    height: 312px;
     padding: 20px 0;
     background-color: var(--navyblue)
 }
@@ -1397,10 +1432,11 @@ img {
 
 
 .footer-subs {
+    margin-top: -80px;
     display: flex;
     margin-left: 100px;
     justify-content: center;     
-    margin-left: 100px;  
+    margin-left: 80px;  
 }
 .footer-heading-2 {
     display: block;
@@ -1411,6 +1447,7 @@ img {
     fill: currentColor;
 }
 .footer-sub {
+
     color: var(--whitecolor);
 }
 .footer.button:hover,
@@ -1689,7 +1726,7 @@ img {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 769px;
     padding: 48px 40px;
     background-color: var(--BG);
     z-index: 200;
