@@ -883,6 +883,11 @@ img {
     color: var(--slatecolor);
     padding-bottom: 10px;
 }
+.footer {
+    display: flex;
+    flex-direction: row;
+    
+}
 
 }
 
