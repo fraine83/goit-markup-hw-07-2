@@ -567,9 +567,7 @@ img {
     padding-right: 15px;
     height: 0 auto;
     padding: 30px;
-    align-items: center;
-    justify-content: center;
-      
+    margin: auto;     
 }
    
 .footer-block {
@@ -653,7 +651,10 @@ img {
     border: 1px solid var(--whitecolor);
     border-radius: 4px;
     color: var(--whitecolor);
-    }
+    align-items: center;
+    justify-content: center;
+}
+
 
 .footer .button {
     display: inline-flex;
