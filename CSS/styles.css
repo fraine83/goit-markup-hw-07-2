@@ -681,7 +681,6 @@ img {
 
 @media screen and (min-width: 768px) {
 .container {
-   
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -696,12 +695,22 @@ img {
     display: none;
 }
 .page-header {
-    height: 72px;
+   padding: 24px 16px;
+    border-bottom: .1px solid var(--cornflower);
+}
+.menu,
+.navigation,
+.nav-menu,
+.page  {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: .1px solid var(--cornflower);
+    align-content: center;
 }
+.nav-menu {
+    display: inline-flex;
+}
+
 .nav-menu .page,
 .contacts-menu .contact {
     color: var(--navyblue);
@@ -710,32 +719,27 @@ img {
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    display: block;
     padding-top: 32px;
     padding-bottom: 31px;
     transition: color 250ms ease-in-out;
 }
-
-.nav-menu {
-    display: flex;
-   
-}
+ 
 
 .nav-menu .item:not(:last-child)
  {
     margin-right: 30px;
 }
 
+
 .contacts-menu {
-    gap: 10px;
+    display: grid;
+    grid-template-rows: 20px;
+    margin-left: 100px;
+}  
+.contacts-menu .item {
+    display: flex;
     margin-left: auto;
-    
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}   
+}
 
 .contacts-menu .contact {
     font-weight: 400;
@@ -746,6 +750,8 @@ img {
 }
 .nav-menu .page {
     position: relative;
+    margin-bottom: 0px;
+    margin-left: 60px;
 }
 
 .page {
@@ -768,6 +774,9 @@ img {
     background-color: var(--oceancolor);
     border: 2px solid var(--oceancolor);
 }
+.nav-menu .item {
+    margin-bottom: 0;
+}
 
 .nav-menu .page:hover,
 .nav-menu .page:focus,
@@ -784,17 +793,6 @@ img {
     width: 100%;
 }
 
-.menu,
-.navigation,
-.nav-menu,
-.contacts-menu{
-    display: flex;
-    align-items: center;
-}
-.menu {
-    align-content: center;
-   justify-content: center;
-}
 
 
 .hero {
