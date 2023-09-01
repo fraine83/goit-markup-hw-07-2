@@ -64,6 +64,8 @@ img {
 
 .container {
     padding: 0 16px;
+   
+
 
 
 }
@@ -700,6 +702,7 @@ img {
 
 @media screen and (min-width: 768px) {
 .section {
+    
     padding: 96px 0px;
 }
 
