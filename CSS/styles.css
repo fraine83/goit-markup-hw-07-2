@@ -64,6 +64,8 @@ img {
 
 .container {
     padding: 0 16px;
+
+
 }
 .section {
     padding: 96px 0;
@@ -78,7 +80,7 @@ img {
     display: none;
 }
 .page-header {
-    padding: 24px 16px;
+    padding: 24px 0px;
     align-items: center;
     justify-content: center;
     border-bottom: .1px solid var(--cornflower);
@@ -197,7 +199,6 @@ img {
     line-height: 1.5px;
     margin-bottom: 72px;
 }
-
 
 .team .name,
 .team .position {
@@ -655,9 +656,11 @@ img {
     padding: 8px 24px;
     width: 170px;
     margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     gap: 16px;
 }
-
 
 .footer-subs {
     margin-top: 80px;
@@ -667,21 +670,19 @@ img {
     text-align: center;
 }
 .footer-heading-2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     color: var(--ashwhite);
     margin-bottom: 40px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 .footer-email-1 {
     display: block;
-    margin-left: -80px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
     margin-top: 40px;  
-}
-.footer .button {
-    display: flex;
-    margin-top: -40px;
-    margin-left: 290px;
+    width: 100%;
 }
 .footer-sub {
     fill: currentColor;
@@ -726,7 +727,7 @@ img {
     align-content: center;
 }
 .nav-menu {
-    display: inline-flex;
+    margin-left: 120px;
 }
 
 .nav-menu .page,
@@ -765,7 +766,6 @@ img {
 .nav-menu .page {
     position: relative;
     margin-bottom: 6px;
-    margin-left: 60px;
 }
 
 .page {
@@ -813,17 +813,16 @@ img {
     background-size: cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
+    padding: 112px;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/Dark-bg.png), url(../images/people-office-1-t@2x.jpg);
+    background-image: url(../images/Dark-bg.png), url(../images/people-office-1-t@2x.jpg);
     }
 }
 .benefits {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     gap: 72px 24px;      
 }
 .benefits .item {
@@ -940,12 +939,24 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
     width: 265px; 
+    margin-left: -80px;
 }
 .footer.button {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;   
 }
+.footer .button {
+    display: flex;
+    margin-top: -40px;
+    margin-left: 290px;
+}
+.footer-email-1 {
+    display: block;
+    margin-left: -80px;
+    margin-top: 40px;
+}
+
 .modal {
     width: 408px;
 }
@@ -965,7 +976,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 76px;
+  
     border-bottom: .1px solid var(--cornflower);
     padding: 0px 0px;
 }
@@ -1001,17 +1012,14 @@ img {
     line-height: 1.15;
     letter-spacing: 0.02em;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: color 250ms ease-in-out;
 }
 .nav-menu {
-    margin-left: 30px;
-    margin-right: 100px;
+    margin-right: 120px;
 }
 .nav-menu .item:not(:last-child),
 .contacts-menu .item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 40px;
 }
 .contacts-menu {
     margin-left: 210px;
@@ -1030,9 +1038,11 @@ img {
 
 .nav-menu .page {
     position: relative;
+    margin-bottom: 0%;
 }
 .page {
     position: relative;
+    margin-bottom: 0px;
 }
 
 .nav-menu .page::after {
@@ -1041,6 +1051,7 @@ img {
     left: 0;
     height: 4px;
     bottom: -1px;
+    margin-bottom: 4px;
     width: 0;
     border-radius: 2px;
     transition: width 250ms ease-in-out, background-color 250ms ease-in-out,
@@ -1917,7 +1928,6 @@ cursor: pointer;
 .mob-social-team {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 48px;
     gap: 56px; 
 }
